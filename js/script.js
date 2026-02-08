@@ -1,8 +1,6 @@
 let numA; //parseInt(prompt("Primer número: "));
 let numB; // parseInt(prompt("Segundo número: "));
-let operate = console.log(
-  "****Ingresa operado matemático**** \n1: +\n2: -\n3: *\n4: /",
-);
+let operate;
 
 function add(a, b) {
   return a + b;
@@ -42,4 +40,16 @@ switch (operate) {
 
 if (result !== undefined) {
   console.log("Resultado: " + result);
+}
+
+//5- Update number of variables
+function clearEntry() {}
+
+// Clear all
+// Esta función limpia todo el estado de la calculadora
+function clearAll() {
+  numA = null;
+  numB = null;
+  currentOperation = null;
+  console.log("Calculadora reiniciada");
 }

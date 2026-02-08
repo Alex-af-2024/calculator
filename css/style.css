@@ -11,7 +11,7 @@ body {
   color: white;
 }
 
-h1 { margin-bottom: 20px; font-weight: 300; }
+h1 { margin-bottom: 20px; font-weight: 300; color: chocolate; font-weight: 700;}
 
 /* Panel con efecto Glassmorphism */
 #calculator-panel {
@@ -28,6 +28,23 @@ h1 { margin-bottom: 20px; font-weight: 300; }
   width: 320px;
 }
 
+#display{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Fondo oscuro */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  color: #60a5fa; /* Color neón azul */
+  font-family: 'Courier New', Courier, monospace; /* Fuente digital */
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  outline: none;
+  text-shadow: 0 0 10px rgba(96, 165, 250, 0.5); /* Resplandor */
+}  
+
+
 /* Unificamos números y operadores en una sola cuadrícula */
 #numbers, #operators {
   display: grid;
@@ -43,6 +60,18 @@ button {
   padding: 20px;
   color: white;
   font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#btn-ce{
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  color: yellow;
+  font-size: 1.2rem;
+  font-weight: 900;
   cursor: pointer;
   transition: all 0.2s ease;
 }
